@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>יצירת קשר</h1>
+        <nav>
+            <a href="home.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="rooms.html">חדרים</a>
+            <a href="gallery.html">גלריית תמונות</a>
+            <a href="contact.html">צור קשר</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>נשמח לשמוע ממך!</h2>
+        <p>טלפון להזמנות: 1800-80-80-80</p>
+        <p>אימייל: shalva@gmail.com</p>
+
+        <form action="sent.html">
+            <div class="form-group">
+                <label for="name">שם:</label>
+                <input required type="text" id="name" name="txt_name" placeholder="הזן את שמך">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">טלפון:</label>
+                <input required type="tel" id="phone" name="txt_number" placeholder="הזן את מספר הטלפון">
+            </div>
+
+            <div class="form-group">
+                <label for="email">אימייל:</label>
+                <input required type="email" id="email" name="txt_email" placeholder="הזן את האימייל שלך">
+            </div>
+
+            <div class="form-group">
+                <p>סוג הפנסיון:</p>
+                <label>
+                    <input required type="radio" name="pension" value="full">
+                    פנסיון מלא
+                </label>
+                <label>
+                    <input required type="radio" name="pension" value="half">
+                    חצי פנסיון
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="rooms">באיזה חדר אתה מעוניין?</label>
+                <select id="rooms" name="rooms">
+                    <option value="suite">סוויטה</option>
+                    <option value="standard">סטנדרט</option>
+                    <option value="luxury">חדר יוקרה</option>
+                </select>
+            </div>
+
+            <button type="submit">שלח</button>
+        </form>
+    </main>
+
+    <footer>האתר נוצר ע"י כהן הפקות</footer>
+</body>
+
+</html>
